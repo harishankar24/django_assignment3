@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'Assignment5.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djangodb',
+        'NAME': 'assignmentdb',
         'USER': 'root',
         'PASSWORD': 'test123',
     }
