@@ -7,7 +7,7 @@ class CourseForm(ModelForm):
         model = Course
         fields = '__all__'
         widgets = {
-            'description': Textarea(attrs={'cols': 80, 'rows': 20}),
+            'description': Textarea(attrs={'cols': 40, 'rows': 10}),
         }
         labels = {
             'cname': ('Course Name'),
