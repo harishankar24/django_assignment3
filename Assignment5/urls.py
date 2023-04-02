@@ -20,6 +20,7 @@ from fbvApp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.courseList, name='home'),
-    path('delete/<int:id>', views.deleteCourse, name='deleteCourse'),
     path('create/', views.createCourse, name='createCourse'),
+    path('delete/<int:id>', views.deleteCourse, name='deleteCourse'),
+    path('update/<int:id>', views.updateCourse, name='updateCourse'),
 ]

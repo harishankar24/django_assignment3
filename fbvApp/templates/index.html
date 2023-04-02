@@ -25,7 +25,7 @@
                 <td>{{ course.description }}</td>
                 <td>{{ course.instructor }}</td>
                 <td>{{ course.rating }}</td>
-                <td><a href="">Edit</a></td>
+                <td><a href="{% url 'updateCourse' course.id %}">Edit</a></td>
                 <td><a href="{% url 'deleteCourse' course.id %}">Delete</a></td>
             </tr>
             {% endfor %}
